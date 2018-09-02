@@ -1,3 +1,4 @@
-a=862
+from collections import defaultdict
 
-a=862%10
+a=defaultdict(int)
+print(a[1])

@@ -2,7 +2,7 @@
 # 输入:nums = [1,1,1], k = 2
 # 输出: 2 , [1,1] 与 [1,1] 为两种不同的情况。
 
-from collections import deque
+from collections import defaultdict
 
 
 class Solution:
@@ -12,22 +12,23 @@ class Solution:
         :type k: int
         :rtype: int
         """
-        all = 0
-        a_que = deque()
-        while nums:
-            a = nums.pop()
-            a_que.append(a)
-            if sum(a_que) == k:
-                all += 1
-                a_que.popleft()
-            elif sum(a_que)>k:
-                a_que.popleft()
-        return all
+        sum = 0
+        numbers = 0
+        value_dict = defaultdict(int)
+        # 总和为0的数为1
+        value_dict[0] = 1
+        for each in nums:
+            sum += each
+            numbers += value_dict[sum - k]
+            value_dict[sum] += 1
+
+        return numbers
 
 
 if __name__ == '__main__':
     sol = Solution()
-    test_list=[-1,-1,1]
-    test_num=0
+    test_list = [1]
+
+    test_num = 0
     sd = sol.subarraySum(test_list, test_num)
     print(sd)

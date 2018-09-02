@@ -4,12 +4,3 @@
 # 输入包括一个整数n,(1 ≤ n ≤ 10^5)
 # 1325
 # 6556
-
-a=raw_input()
-
-a_list=[s for s in a]
-a_list.reverse()
-num_a=int(''.join(s f1or s in a_list))
-
-result=int(a)+num_a
-print(result)
