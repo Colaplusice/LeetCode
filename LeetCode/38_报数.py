@@ -7,21 +7,21 @@ class Solution:
     def countAndSay(self, n):
         fron = '1'
         for i in range(1, n):
-            pre = None
-            num = 0
+            num = 1
             new_fron = ''
-            for each in fron:
+            pre = fron[0]
+            for each in fron[1:]:
                 if each == pre:
                     num += 1
                 else:
-                    if num != 0:
-                        new_fron += str(num) + pre
-                        pre = each
-                        num = 1
+                    new_fron = new_fron + str(num) + pre
+                    pre = each
+                    num = 1
+            new_fron = new_fron + str(num) + pre
             fron = new_fron
-        print(fron)
         return fron
 
 
 sol = Solution()
-str = sol.countAndSay(2)
+str = sol.countAndSay(6)
+print(str)
