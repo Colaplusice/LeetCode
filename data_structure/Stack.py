@@ -1,5 +1,3 @@
-
-
 class Stack:
     def push(self):
         pass
