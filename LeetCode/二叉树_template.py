@@ -1,20 +1,9 @@
-# @Time    : 2018/9/15 上午6:40
-
-
 # Definition for a binary tree node.
 class TreeNode:
     def __init__(self, x):
         self.val = x
         self.left = None
         self.right = None
-
-
-class Solution:
-    def maxDepth(self, root):
-        """
-        :type root: TreeNode
-        :rtype: int
-        """
 
 
 if __name__ == '__main__':
@@ -29,3 +18,5 @@ if __name__ == '__main__':
     btree.left = dtree
     ctree.right = etree
     sol = Solution()
+    value = sol.levelOrder(atree)
+    print(value)
