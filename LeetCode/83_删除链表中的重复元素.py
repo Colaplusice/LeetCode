@@ -5,11 +5,11 @@ class ListNode:
         self.next = None
 
     def Out_link(self):
-        temp_node=self
+        temp_node = self
         while temp_node:
             print(temp_node.val)
-            temp_node=temp_node.next
-        print('-'*10)
+            temp_node = temp_node.next
+        print('-' * 10)
 
 
 # 给定一个排序链表，删除所有重复的元素，使得每个元素只出现一次。
@@ -35,17 +35,16 @@ class Solution:
         return head
 
 
-
 if __name__ == '__main__':
     a = ListNode(1)
     b = ListNode(1)
-    a.next=b
+    a.next = b
     c = ListNode(1)
-    b.next=c
+    b.next = c
     d = ListNode(4)
-    c.next=d
+    c.next = d
     e = ListNode(4)
-    d.next=e
+    d.next = e
     a.Out_link()
     sol = Solution()
     sd = sol.deleteDuplicates(a)

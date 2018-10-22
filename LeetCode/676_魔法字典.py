@@ -1,5 +1,4 @@
 class MagicDictionary:
-
     def __init__(self):
         self.dicts = {}
         """
@@ -15,10 +14,8 @@ class MagicDictionary:
         self.dicts = {}
         for each in dict:
             print(each)
-            self.dicts.setdefault(len(each),[])
+            self.dicts.setdefault(len(each), [])
             self.dicts[len(each)].append(each)
-
-
 
     def search(self, word):
         """
@@ -28,8 +25,8 @@ class MagicDictionary:
         """
         # 一个字母换成另一个字母，存在dicts中，首先即word和dicts中的每个单词必须差一个字母
         # 或者多一个字母，通过求两字符串的编辑距离来实现 ，动态规划
-        l=len(word)
-        self.dicts.setdefault(l,[])
+        l = len(word)
+        self.dicts.setdefault(l, [])
         for each in self.dicts[l]:
             result = self.min_distance(word, each)
             if result:

@@ -1,5 +1,7 @@
 # @Time    : 2018/9/22 上午1:12
 # Definition for a binary tree node.
+
+
 class TreeNode:
     def __init__(self, x):
         self.val = x
@@ -14,37 +16,16 @@ class Solution:
         :type sum: int
         :rtype: bool
         """
-        '''
-        感觉是要dfs遍历 然后统计数据啊
-        '''
         if not root:
             return False
-        a_stack=[root]
-        value=0
-        while a_stack:
-            current_node=a_stack.pop()
-            value+=current_node.val
-            if current_node.left:
-
-                pass
-            if current_node.right:
-                pass
-
-            if not current_node.left and not current_node.right:
-                pass
+        return (
+            (root.val == sum and not root.left and not root.right)
+            or self.hasPathSum(root.left, sum - root.val)
+            or self.hasPathSum(root.right, sum - root.val)
+        )
 
 
-
-
-
-
-
-
-
-
-
-
-if __name__ == '__main__':
+if __name__ == "__main__":
     atree = TreeNode(1)
     btree = TreeNode(2)
     ctree = TreeNode(3)
@@ -56,5 +37,5 @@ if __name__ == '__main__':
     btree.left = dtree
     ctree.right = etree
     sol = Solution()
-    value = sol.levelOrder(atree)
+    value = sol.hasPathSum(atree, 3)
     print(value)

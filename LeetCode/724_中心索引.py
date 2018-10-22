@@ -31,14 +31,13 @@ class Solution:
             if 0 == plist[last] - plist[index] and index is 0:
                 print('here')
                 return 0
-            if index>0 and plist[index - 1] == plist[last] - plist[index]:
+            if index > 0 and plist[index - 1] == plist[last] - plist[index]:
                 return index
         return -1
 
 
 if __name__ == '__main__':
     sol = Solution()
-    lists = [0,-1,-1,-1,-1,-1]
-
+    lists = [0, -1, -1, -1, -1, -1]
 
     print(sol.pivotIndex(lists))

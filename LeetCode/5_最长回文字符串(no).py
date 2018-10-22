@@ -26,7 +26,7 @@ class Solution:
 
     def longestPalindrome_2(self, s):
         max_length = 0
-        len_s=s.__len__()
+        len_s = s.__len__()
         start = 1
         matrix = [[0] * len_s] * len_s
         for i in range(len_s - 1):
@@ -38,16 +38,16 @@ class Solution:
 
         for len in range(3, len_s):  # 长长度
             for i in range(len_s - len + 1):  # 起点
-                j=i+len-1
-                if s[i + 1][j-1] and s[i] == s[j]:
+                j = i + len - 1
+                if s[i + 1][j - 1] and s[i] == s[j]:
                     s[i][j] = 1
                     max_length = len
                     start = i
         print(start)
         print(max_length)
-        return s[start:max_length + start]
+        return s[start : max_length + start]
 
 
 sol = Solution()
-sd = sol.longestPalindrome_2('aba')
+sd = sol.longestPalindrome_2("aba")
 print(sd)

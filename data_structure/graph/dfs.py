@@ -8,10 +8,11 @@ class TreeNode:
         self.right = None
 
 
-class Solution():
-    '''
+class Solution:
+    """
     this is just for tree,if the graph, have to exclude the visited node
-    '''
+    """
+
     def dfs_recursion(self, root):
         if not root:
             return
@@ -22,26 +23,26 @@ class Solution():
             self.dfs_recursion(root.right)
 
     def dfs_stack(self, root):
-        node_stack=[root]
+        node_stack = [root]
         while node_stack:
-            node=node_stack.pop()
+            node = node_stack.pop()
             if root.left:
                 node_stack.append(root.left)
             if root.right:
                 node_stack.append(root.right)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     atree = TreeNode(1)
     btree = TreeNode(2)
     ctree = TreeNode(3)
     dtree = TreeNode(4)
     etree = TreeNode(5)
-    '''
+    """
         1     
       2   3
     4       5
-    '''
+    """
 
     atree.left = btree
     atree.right = ctree
@@ -49,5 +50,5 @@ if __name__ == '__main__':
     ctree.right = etree
     sol = Solution()
     # value = sol.dfs_recursion(atree)
-    print('~'*20)
+    print("~" * 20)
     value2 = sol.dfs_stack(atree)

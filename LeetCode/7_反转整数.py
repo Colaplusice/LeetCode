@@ -4,6 +4,7 @@
 #  For the purpose of this problem,
 # assume that your function returns 0 when the reversed integer overflows.
 
+
 class Solution:
     def reverse(self, x):
         if x > int(2147483647):
@@ -11,7 +12,7 @@ class Solution:
         elif x > 0:
             x = str(x)
             x = x[::-1]
-            while x.startswith('0'):
+            while x.startswith("0"):
                 x = x[1:]
             if int(x) > int(2147483647):
                 return 0
@@ -20,7 +21,7 @@ class Solution:
             x = str(x)
             print(x)
             x = self.reverse(int(x[1:]))
-            x = '-' + str(x)
+            x = "-" + str(x)
             if int(x) > int(2147483647):
                 return 0
             return int(x)
