@@ -8,7 +8,6 @@ class TreeNode:
 
 
 class Solution:
-
     def preorderTraversal(self, root):
 
         ## 循环实现
@@ -22,7 +21,7 @@ class Solution:
             return result_list
         alist.append(root)
         result_list.append(root.val)
-        root.is_append=True
+        root.is_append = True
         while alist:
             a = alist.pop()
 

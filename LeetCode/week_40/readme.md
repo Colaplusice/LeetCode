@@ -43,6 +43,21 @@ root节点为栈的第一个节点，如果root节点有left节点或者right节
 关键点就在于如何找出最小的点。
 
 
+### 109 有序链表转换为二叉搜索树
+
+- 找到中间节点，因为是升序链表所以node左边为左子树,node右边为右字树
+- 递归建树
+
+如何找到中间节点呢?
+思路1: 用一个node,每次前进两个单位，用tempnode每次前进一个单位，
+当node走到头后，tempnode就恰好走到了中间节点
+
+递归时注意的细节:
+- 此时需要一个tail节点，tail节点为Null
+- if current_node.next=tail,应该直接构造树节点返回结果
+- 判断temp_node的时候，要确保有temp_node: while temp_node and temp_node.next
+
+
 
 
 
