@@ -1,14 +1,6 @@
-from collections import OrderedDict
-a=OrderedDict()
-
-
-a[0]=1
-a[1]=2
-a[2]=4
-print(a)
-a.move_to_end(2,last=False)
+a=[[1] for _ in range(10)]
 print(a)
 
-a.popitem()
-
-print(a)
+for each in a:
+    print(each)
+    print(id(each))
