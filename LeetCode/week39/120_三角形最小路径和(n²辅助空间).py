@@ -22,19 +22,24 @@ class Solution:
                 continue
             for index, each_value in enumerate(each_list):
                 if index == 0:
-                    value[list_index][0] = value[list_index - 1][0] + triangle[list_index][0]
+                    value[list_index][0] = (
+                        value[list_index - 1][0] + triangle[list_index][0]
+                    )
                     continue
                 if index == len(each_list) - 1:
-                    value[list_index][-1] = value[list_index - 1][-1] + triangle[list_index][-1]
+                    value[list_index][-1] = (
+                        value[list_index - 1][-1] + triangle[list_index][-1]
+                    )
                     continue
-                value[list_index][index] = \
-                    min(value[list_index - 1][index], value[list_index - 1][index - 1]) + triangle[list_index][
-                        index]
+                value[list_index][index] = (
+                    min(value[list_index - 1][index], value[list_index - 1][index - 1])
+                    + triangle[list_index][index]
+                )
 
         return min(value[-1])
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     sol = Solution()
     result = sol.minimumTotal([[2], [3, 4], [6, 5, 7], [4, 1, 8, 3]])
     print(result)

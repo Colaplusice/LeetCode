@@ -1,1 +1,1 @@
-print(min(1,2,34))
+print(min(1, 2, 34))

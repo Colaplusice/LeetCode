@@ -6,18 +6,20 @@ def cal():
     f = int(list[1])
     d = int(list[2])
     p = int(list[3])
-    if d==0:
+    if d == 0:
         print(0)
         return
-    if f >d/x:
-        print(d/x)
+    if f > d / x:
+        print(d / x)
         return
 
-    days=f
-    d-=(f*x)
+    days = f
+    d -= f * x
 
-    all=p+x
-    days+=d/all
+    all = p + x
+    days += d / all
     print(days)
-if __name__ == '__main__':
+
+
+if __name__ == "__main__":
     cal()

@@ -14,7 +14,7 @@ class Solution:
         return lens
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     a = Solution()
-    ma = a.lengthOfLongestSubstring('nfpdmpi')
+    ma = a.lengthOfLongestSubstring("nfpdmpi")
     print(ma)

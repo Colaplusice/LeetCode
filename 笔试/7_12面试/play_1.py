@@ -55,7 +55,7 @@ class LinkList:
             temp_2 = temp_2.next
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     a_list = LinkList()
     b_list = LinkList()
     a = Node(1)

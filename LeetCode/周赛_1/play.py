@@ -1,3 +1,3 @@
-a='sd+sd+sd'
+a = "sd+sd+sd"
 
-print(a[:a.index('+')])
+print(a[: a.index("+")])

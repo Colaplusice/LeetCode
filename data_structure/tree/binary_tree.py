@@ -70,14 +70,14 @@ class Tree:
         while temp.left:
             print(temp.value)
             temp = temp.left
-        print('right-----')
+        print("right-----")
         temp = self.root
         while temp.right:
             print(temp.value)
             temp = temp.right
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     root = TreeNode(value=0)
     tree = Tree(root)
     for i in range(1, 10):
@@ -88,8 +88,8 @@ if __name__ == '__main__':
 
     # tree.outPut()
     tree.pre_order(root)
-    print('*' * 20)
+    print("*" * 20)
     tree.mid_order(root)
-    print('*' * 20)
+    print("*" * 20)
     tree.last_order(root)
-    print('*' * 20)
+    print("*" * 20)

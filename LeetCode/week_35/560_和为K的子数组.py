@@ -25,7 +25,7 @@ class Solution:
         return numbers
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     sol = Solution()
     test_list = [1]
 

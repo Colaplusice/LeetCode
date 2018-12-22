@@ -10,5 +10,5 @@ class Solution:
             if left == right == 0:
                 a_list.append(str_s)
 
-        helper(n, n, '')
+        helper(n, n, "")
         return a_list

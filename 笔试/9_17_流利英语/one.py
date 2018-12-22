@@ -13,7 +13,7 @@ def find_big_list(value_list):
     print(return_value)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
 
     length = int(input())
     i = 0

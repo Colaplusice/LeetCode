@@ -1,2 +1,2 @@
-a=[]
-print(','.join(a))
+a = []
+print(",".join(a))

@@ -1,1 +1,1 @@
-print(ord('w'))
+print(ord("w"))

@@ -13,7 +13,7 @@ class ListNode:
         while temp_node:
             print(temp_node.val)
             temp_node = temp_node.next
-        print('-' * 10)
+        print("-" * 10)
 
 
 class Solution:
@@ -42,7 +42,7 @@ class Solution:
         return head
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     a = ListNode(1)
     # b = ListNode(1)
     # a.next = b

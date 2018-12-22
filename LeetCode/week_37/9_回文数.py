@@ -3,9 +3,9 @@
 class Solution:
     def isPalindrome(self, x):
         s = []
-        if (x < 0):
+        if x < 0:
             return False
-        while (x / 10 > 0):
+        while x / 10 > 0:
             o = x % 10
             x = int(x / 10)
             s.append(o)

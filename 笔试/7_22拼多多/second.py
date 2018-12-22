@@ -12,31 +12,35 @@
 # bacd
 # bdca
 
+
 def char_toInt(strs):
     return [ord(i) for i in strs]
-def which_pass(a_list,b_list):
-    v_1=0
-    v_2=0
+
+
+def which_pass(a_list, b_list):
+    v_1 = 0
+    v_2 = 0
     # print('alist{} and blist{}'.format(a_list,b_list))
-    for i_1, i_2, in zip(a_list,b_list):
+    for i_1, i_2 in zip(a_list, b_list):
         # print(i_1,i_2)
-        if i_1<i_2:
-            v_1+=1
-        elif i_1>i_2:
-            v_2+=1
-    if v_1>v_2:
+        if i_1 < i_2:
+            v_1 += 1
+        elif i_1 > i_2:
+            v_2 += 1
+    if v_1 > v_2:
         return b_list
-    elif v_2>v_1:
+    elif v_2 > v_1:
         return a_list
     else:
         return None
 
 
-
 import sys
+
+
 def main():
     # 读取第一行的n
-    input_list = sys.stdin.readline().strip().split(' ')
+    input_list = sys.stdin.readline().strip().split(" ")
     # print(input_list)
     star = int(input_list[0])
     vote = int(input_list[1])
@@ -71,22 +75,21 @@ def main():
                 # print('-'*20)
                 # print('pasjslist is i_list')
                 # print(i_list,j_list)
-                pass_dict[i] = 'pass'
+                pass_dict[i] = "pass"
             elif pass_list == j_list:
                 # print('-' * 20)
                 # print('passlist is j_list')
                 # print(i_list, j_list)
-                pass_dict[j] = 'pass'
+                pass_dict[j] = "pass"
             else:
-                pass_dict[i] = 'pass'
-                pass_dict[j] = 'pass'
+                pass_dict[i] = "pass"
+                pass_dict[j] = "pass"
     # print(pass_dict)
     for i in range(star):
         if not pass_dict.get(i):
             print(i)
             return
     print(-1)
-
 
     # print(dicts)
 

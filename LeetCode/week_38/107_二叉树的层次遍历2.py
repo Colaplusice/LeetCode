@@ -34,17 +34,14 @@ class Solution:
                 node_dict[node_level + 1].append(current_node.right.val)
                 node_list.append((current_node.right, node_level + 1))
 
-        result= sorted(node_dict.items(),reverse=True,key=lambda x:x[0])
+        result = sorted(node_dict.items(), reverse=True, key=lambda x: x[0])
 
-        return list(map(lambda x:x[1],result))
+        return list(map(lambda x: x[1], result))
 
         # return [value for value in node_dict.values()]
 
 
-
-
-
-if __name__ == '__main__':
+if __name__ == "__main__":
     atree = TreeNode(1)
     btree = TreeNode(2)
     ctree = TreeNode(3)

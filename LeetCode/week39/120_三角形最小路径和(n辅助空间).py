@@ -17,16 +17,9 @@ class Solution:
         #     val[index] = each_node
 
         for level_index, each_level in enumerate(triangle):
-            val[0]=triangle[level_index][0]+val[0]
-            for index, each_node in \
-                    enumerate(each_level[1:], 1):
-                val[index] = (
-                        min(
-                            each_level[index],
-                            each_level[index - 1],
-                        )
-                        + val[index]
-            )
+            val[0] = triangle[level_index][0] + val[0]
+            for index, each_node in enumerate(each_level[1:], 1):
+                val[index] = min(each_level[index], each_level[index - 1]) + val[index]
 
         print(val)
 

@@ -3,7 +3,6 @@
 
 
 class Solution:
-
     def maximumSwap(self, num):
 
         """e
@@ -33,15 +32,15 @@ class Solution:
             i = int(i)
             if i > max_num:
                 max_num = i
-                max_index=index
-            if i==max_num:
+                max_index = index
+            if i == max_num:
                 pass
             else:
                 change_index = max_index
                 small_index = index
         switch(num, small_index, change_index)
         num.reverse()
-        return int(''.join(num))
+        return int("".join(num))
 
 
 def switch(lists, index_a, index_b):

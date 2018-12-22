@@ -8,7 +8,6 @@ class TreeNode:
 
 
 class Solution:
-
     def binaryTreePaths(self, root):
         """
         :type root: TreeNode
@@ -16,7 +15,7 @@ class Solution:
         """
         if not root:
             return
-        node_stack = [(root, '')]
+        node_stack = [(root, "")]
         res = []
 
         while node_stack:
@@ -25,13 +24,13 @@ class Solution:
                 res.append(value + str(node.val))
 
             if node.left:
-                node_stack.append((node.left, value + str(node.val) + '->'))
+                node_stack.append((node.left, value + str(node.val) + "->"))
             if node.right:
-                node_stack.append((node.right, value + str(node.val) + '->'))
+                node_stack.append((node.right, value + str(node.val) + "->"))
         return res
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     atree = TreeNode(1)
     btree = TreeNode(2)
     ctree = TreeNode(3)

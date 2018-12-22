@@ -1,11 +1,11 @@
-dicts={}
+dicts = {}
 
-dicts[1]=2
-dicts[2]=4
+dicts[1] = 2
+dicts[2] = 4
 
-sd=dicts.items()
+sd = dicts.items()
 
-sd=list(sd)
+sd = list(sd)
 sd.pop(0)
 
 print(dicts)

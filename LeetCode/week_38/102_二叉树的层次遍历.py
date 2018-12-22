@@ -25,19 +25,15 @@ class Solution:
         while queue_list:
             current_node = queue_list.popleft()
             if current_node[0].left:
-                temp_dict[current_node[1] + 1].append(
-                    current_node[0].left.val
-                )
+                temp_dict[current_node[1] + 1].append(current_node[0].left.val)
                 queue_list.append((current_node[0].left, current_node[1] + 1))
             if current_node[0].right:
-                temp_dict[current_node[1] + 1].append(
-                    current_node[0].right.val
-                )
+                temp_dict[current_node[1] + 1].append(current_node[0].right.val)
                 queue_list.append((current_node[0].right, current_node[1] + 1))
         return [value for value in temp_dict.values()]
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     atree = TreeNode(1)
     btree = TreeNode(2)
     ctree = TreeNode(3)

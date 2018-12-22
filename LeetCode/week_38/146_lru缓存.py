@@ -41,7 +41,7 @@ obj = LRUCache(capacity)
 
 while True:
     a = input()
-    a_list = a.split(' ')
+    a_list = a.split(" ")
     if len(a_list) > 1:
         obj.put(a_list[0], a_list[1])
     else:

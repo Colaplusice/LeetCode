@@ -9,10 +9,10 @@ def bubble_sort(lists):
 
 
 base_array = []
-a_list = input().split(' ')
+a_list = input().split(" ")
 for _ in range(len(a_list)):
-    base_array.extend(input().strip().split(' '))
+    base_array.extend(input().strip().split(" "))
 
 base_array = [int(a) for a in base_array]
 base_array = bubble_sort(base_array)
-print(' '.join([str(a) for a in base_array]))
+print(" ".join([str(a) for a in base_array]))

@@ -5,9 +5,9 @@ class Solution:
         :type A: List[List[int]]
         :rtype: int
         """
-        '''
+        """
         value_arr[i][j] 第i行 第j列的最小值
-        '''
+        """
         value_arr = [[0] * len(A) for _ in range(len(A))]
         for row_index, each_row in enumerate(A):
             if row_index == 0:
@@ -43,7 +43,7 @@ class Solution:
         return min(value_arr[-1])
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     sol = Solution()
-    res = sol.minFallingPathSum([[10,-98,44],[-20,65,34],[-100,-1,74]])
+    res = sol.minFallingPathSum([[10, -98, 44], [-20, 65, 34], [-100, -1, 74]])
     print(res)

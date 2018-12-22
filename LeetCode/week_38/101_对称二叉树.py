@@ -36,13 +36,13 @@ class Solution:
         if not left and not right:
             return True
         if left.val == right.val:
-            return self.is_symmetric(left.left, right.right) and \
-               self.is_symmetric(left.right, right.left)
+            return self.is_symmetric(left.left, right.right) and self.is_symmetric(
+                left.right, right.left
+            )
         return False
 
 
-
-if __name__ == '__main__':
+if __name__ == "__main__":
     a = TreeNode(1)
     b = TreeNode(2)
     e = TreeNode(2)
@@ -61,5 +61,5 @@ if __name__ == '__main__':
     e.left = g
     sol = Solution()
 
-    result=sol.isSymmetric(a)
+    result = sol.isSymmetric(a)
     print(result)

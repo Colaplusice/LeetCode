@@ -9,7 +9,7 @@ class ListNode:
         while temp_node:
             print(temp_node.val)
             temp_node = temp_node.next
-        print('-' * 10)
+        print("-" * 10)
 
 
 # 给定一个排序链表，删除所有重复的元素，使得每个元素只出现一次。
@@ -35,7 +35,7 @@ class Solution:
         return head
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     a = ListNode(1)
     b = ListNode(1)
     a.next = b

@@ -11,7 +11,11 @@ def min_distance(self, str_a, str_b):
 
     for i in range(1, len_b + 1):
         for j in range(1, len_a + 1):
-            new_value = dis[i - 1][j - 1] if str_a[j - 1] == str_b[i - 1] else dis[i - 1][j - 1] + 1
+            new_value = (
+                dis[i - 1][j - 1]
+                if str_a[j - 1] == str_b[i - 1]
+                else dis[i - 1][j - 1] + 1
+            )
             dis[i][j] = min(dis[i - 1][j] + 1, dis[i][j - 1] + 1, new_value)
     if dis[len_b][len_a] == 1:
         print(dis)

@@ -8,11 +8,11 @@ class Solution:
             return True
         if not len(s) % 2 == 0:
             return False
-        key_dict = {'(': ')', "{": "}", "[": "]"}
+        key_dict = {"(": ")", "{": "}", "[": "]"}
         a_stack = []
         for each in s:
             if each in key_dict:
                 a_stack.append(each)
-            elif not a_stack or key_dict[a_stack.pop()]!=each:
+            elif not a_stack or key_dict[a_stack.pop()] != each:
                 return False
         return not a_stack

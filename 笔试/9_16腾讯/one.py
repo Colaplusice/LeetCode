@@ -87,16 +87,19 @@ def getMutil(numList):
     for i in numList:
         result *= i
     return result
-if __name__ == '__main__':
-    a=int(input())
-    n=a
+
+
+if __name__ == "__main__":
+    a = int(input())
+    n = a
     while True:
-        a_list=range(a+1,n+1)
-        b_list=range(1,n+1)
-        if getMutil(getLeastCommonMutible(a_list))== getMutil(getLeastCommonMutible(b_list)):
+        a_list = range(a + 1, n + 1)
+        b_list = range(1, n + 1)
+        if getMutil(getLeastCommonMutible(a_list)) == getMutil(
+            getLeastCommonMutible(b_list)
+        ):
             print(n)
             break
-        n+=1
-
+        n += 1
 
     # print(getMutil(getLeastCommonMutible([1,2,3,4,5,6])))

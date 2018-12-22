@@ -1,5 +1,7 @@
 # Definition for singly-linked list.
 from collections import deque
+
+
 class ListNode:
     def __init__(self, x):
         self.val = x
@@ -38,6 +40,7 @@ class Solution:
             return treeNode
 
         return helper(head, None)
+
     def level_out_tree_node(self, root):
         node_queue = deque([root])
         while node_queue:
@@ -48,7 +51,8 @@ class Solution:
             if current_node.right:
                 node_queue.append(current_node.right)
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     atree = ListNode(1)
     btree = ListNode(2)
     ctree = ListNode(3)

@@ -20,7 +20,7 @@ class Solution:
         return final_list[:for_result]
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     a = Solution()
     a_list = [100, 1, 11, 1, 120, 111, 123, 1, -1, -100]
     # a_list = [5,4,3,2,1]

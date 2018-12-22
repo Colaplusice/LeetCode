@@ -6,10 +6,10 @@
 # Because nums[0] + nums[1] = 2 + 7 = 9,
 # return [0, 1].
 class Solution:
-    def twoSum(self,nums, target):
-        sd={}
-        for index_i,i in enumerate(nums):
-            if sd.get(target-i)!=target-i:
-                sd[i]=i
+    def twoSum(self, nums, target):
+        sd = {}
+        for index_i, i in enumerate(nums):
+            if sd.get(target - i) != target - i:
+                sd[i] = i
             else:
-                return [nums.index(target-i),index_i]
+                return [nums.index(target - i), index_i]

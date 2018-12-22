@@ -12,6 +12,7 @@ nums = 0
 # 二叉搜索树，左节点小于根节点小于右节点
 # ******************************开始写代码******************************
 
+
 def Max_heapify(heap, Heapsize, root):
     global nums
     left = root * 2 + 1

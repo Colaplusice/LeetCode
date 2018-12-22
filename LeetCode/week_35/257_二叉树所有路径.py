@@ -8,7 +8,6 @@ class TreeNode:
 
 
 class Solution:
-
     def __init__(self):
         self.tree_list = []
         self.final_list = []
@@ -28,8 +27,7 @@ class Solution:
             return
         self.tree_list.append(root.val)
         if not root.left and not root.right:
-            self.final_list.append(
-                '->'.join([str(a) for a in self.tree_list]))
+            self.final_list.append("->".join([str(a) for a in self.tree_list]))
             self.tree_list.pop()
             return
         self.get_the_path(root.left)
@@ -37,7 +35,7 @@ class Solution:
         self.tree_list.pop()
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     atree = TreeNode(1)
     btree = TreeNode(2)
     ctree = TreeNode(3)

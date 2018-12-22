@@ -8,7 +8,7 @@ class Solution:
         :rtype: str
         """
         if not strs:
-            return ''
+            return ""
         tmp = strs[0]
         for each_word in strs[1:]:
             min_length = min(len(tmp), len(each_word))

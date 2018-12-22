@@ -28,12 +28,12 @@ def build_maxHeap(heap):
     # 依次找到所有的根节点
     for i in range((Heapsize - 2) // 2, -1, -1):
         Max_heapify(heap, Heapsize, i)
-    print('this is heap')
+    print("this is heap")
     print(nums)
     print(heap)
     # print(lists[i])
 
 
-heap =[10, 9, 7, 8, 5, 6, 3, 1, 4, 2]
+heap = [10, 9, 7, 8, 5, 6, 3, 1, 4, 2]
 
 build_maxHeap(heap)

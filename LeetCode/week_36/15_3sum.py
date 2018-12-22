@@ -11,9 +11,8 @@ def list_set(a_list):
 
 
 class Solution:
-
     def threeSum(self, nums):
-        '''
+        """
         排序整个list
         整体问题不大，用夹逼的思想
         遍历list,left,right逗比list的当前值要大
@@ -28,7 +27,7 @@ class Solution:
         如果先从right进行减少的话就超时了
         :param nums:
         :return:
-        '''
+        """
         nums.sort()
         result_list = []
         # 后两个元素没有遍历的必要了
@@ -51,15 +50,19 @@ class Solution:
                         while left < right and nums[right] == nums[right + 1]:
                             right -= 1
                     elif result < 0:
-                        while left<right and nums[index] + nums[left] + nums[right]<0:
-                         left += 1
+                        while (
+                            left < right and nums[index] + nums[left] + nums[right] < 0
+                        ):
+                            left += 1
                     else:
-                        while left < right and nums[index] + nums[left] + nums[right] >0:
-                         right -= 1
+                        while (
+                            left < right and nums[index] + nums[left] + nums[right] > 0
+                        ):
+                            right -= 1
         return list_set(result_list)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     sol = Solution()
 
     list_1 = [-1, 0, 1, 2, -1, -4]

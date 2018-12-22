@@ -1,12 +1,12 @@
 # @Time    : 2018/9/12 上午8:52
-class Node():
+class Node:
     def __init__(self, key=None, value=None):
         self.value = None
         self.key = key
         self.next = value
 
 
-class NodeList():
+class NodeList:
     def __init__(self, capacity):
         self.first = None
 
@@ -54,7 +54,7 @@ class NodeList():
         if move_node == self.first:
             return
         if not per_node:
-            raise AttributeError('per_node is None')
+            raise AttributeError("per_node is None")
 
         per_node.next = move_node.next
         move_node.next = self.first

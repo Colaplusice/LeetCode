@@ -31,7 +31,7 @@ class Solution:
         return head.next
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
 
     sol = Solution()
     a = ListNode(1)

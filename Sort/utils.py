@@ -15,6 +15,6 @@ def generate_random_list(length=100):
 
 # 将lists 调小
 def mix_list(lists):
-    lists=[i for i in lists]
+    lists = [i for i in lists]
 
     return []

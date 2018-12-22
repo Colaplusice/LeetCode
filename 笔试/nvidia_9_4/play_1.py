@@ -1,4 +1,4 @@
-a=set()
+a = set()
 
 a.add(1)
 

@@ -20,11 +20,11 @@ class NodeList:
 
     def add_by_value(self, value):
 
-        '''
+        """
 
         :param value:int
         :return: None
-        '''
+        """
         a = Node(value)
         if not self.first:
             self.first = a
@@ -65,24 +65,24 @@ class NodeList:
         # 链表的转置
 
     def reverse(self):
-        a=self.first
+        a = self.first
         if not a:
             return
-        last_node=a
-        temp_node=None
+        last_node = a
+        temp_node = None
         while a.next:
             # record
-            temp_node=a.next
+            temp_node = a.next
             # update
-            a.next=temp_node.next
+            a.next = temp_node.next
             # record
-            temp_node.next=last_node
+            temp_node.next = last_node
             # update
-            last_node=temp_node
-        self.first=temp_node
+            last_node = temp_node
+        self.first = temp_node
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     s = NodeList()
     s.add_by_value(1)
     s.add_by_value(2)

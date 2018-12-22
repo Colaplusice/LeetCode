@@ -1,6 +1,12 @@
-a=[[1] for _ in range(10)]
-print(a)
+def a():
+    b = 1
+    while True:
+        # 产出b 接收a
+        a = yield b
+        print("this is a", a)
 
-for each in a:
-    print(each)
-    print(id(each))
+
+s = a()
+next(s)
+res = s.send(4)
+print(res)

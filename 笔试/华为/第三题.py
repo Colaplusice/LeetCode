@@ -6,7 +6,7 @@
 # [[1, 0.16667], [2, 0.16667], [3, 0.16667], [4, 0.16667], [5, 0.16667], [6, 0.16667]]
 bit = input("Enter a binary digit:")
 if bit == 0 or bit == 1:
-    print("your input is",bit)
+    print("your input is", bit)
 else:
     print(bit)
     print(type(bit))

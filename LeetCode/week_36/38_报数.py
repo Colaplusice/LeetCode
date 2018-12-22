@@ -5,10 +5,10 @@
 # Given an integer n, gene
 class Solution:
     def countAndSay(self, n):
-        fron = '1'
+        fron = "1"
         for i in range(1, n):
             num = 1
-            new_fron = ''
+            new_fron = ""
             pre = fron[0]
             for each in fron[1:]:
                 if each == pre:

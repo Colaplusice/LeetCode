@@ -47,7 +47,7 @@ class MagicDictionary:
 obj = MagicDictionary()
 dict = ["hello", "leetcode"]
 obj.buildDict(dict)
-word = 'leetcodd'
+word = "leetcodd"
 param_2 = obj.search(word)
 
 print(param_2)

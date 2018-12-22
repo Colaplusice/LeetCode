@@ -1,5 +1,3 @@
-
-
 def bubble_sort(alist):
     n = len(alist)
     for j in range(n - 1):
@@ -13,16 +11,16 @@ def bubble_sort(alist):
     return alist
 
 
-a=input()
-sd=a.split(',')
+a = input()
+sd = a.split(",")
 
-record_list=[]
-result_list=[]
-for index,each in enumerate(sd):
-    record_list.append([index,ord(each[-1])])
+record_list = []
+result_list = []
+for index, each in enumerate(sd):
+    record_list.append([index, ord(each[-1])])
 
-record_list=bubble_sort(record_list)
+record_list = bubble_sort(record_list)
 
-result_list=[sd[i[0]] for i in record_list]
+result_list = [sd[i[0]] for i in record_list]
 result_list.reverse()
-print(','.join(result_list))
+print(",".join(result_list))

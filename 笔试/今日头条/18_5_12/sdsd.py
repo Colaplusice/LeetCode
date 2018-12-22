@@ -1,6 +1,5 @@
-sd='ebc'
-a='ebcc'
-
+sd = "ebc"
+a = "ebcc"
 
 
 if sd in a:

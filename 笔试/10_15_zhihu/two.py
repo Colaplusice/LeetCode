@@ -11,5 +11,5 @@ def max_array(nums):
 
 
 length = int(input())
-a_list = [int(each) for each in input().strip().split(' ')]
+a_list = [int(each) for each in input().strip().split(" ")]
 print(max_array(a_list))

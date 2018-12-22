@@ -1,20 +1,20 @@
+strs = "bbcabcdab abcdabcdabde"
 
-strs='bbcabcdab abcdabcdabde'
 
 def origin(substr):
-    m=len(strs)
-    n=len(substr)
+    m = len(strs)
+    n = len(substr)
 
-    for i in range(m-n+1):
-        if substr==strs[i:i+n]:
+    for i in range(m - n + 1):
+        if substr == strs[i : i + n]:
             return True
 
     return False
 
-result=origin('bbcabcdab abcdabcdabd')
+
+result = origin("bbcabcdab abcdabcdabd")
 print(result)
+
 
 def kmp():
     pass
-
-

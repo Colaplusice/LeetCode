@@ -10,7 +10,7 @@ class Solution:
         return result
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     sol = Solution()
     result = sol.singleNumber([2, 2, 1])
     print(result)

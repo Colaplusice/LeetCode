@@ -18,7 +18,7 @@ class Solution:
         return max(self.maxDepth(root.left), self.maxDepth(root.right)) + 1
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     atree = TreeNode(1)
     btree = TreeNode(2)
     ctree = TreeNode(3)

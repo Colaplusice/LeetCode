@@ -8,19 +8,18 @@ class Solution:
         :rtype: void Do not return anything, modify nums in-place instead.
         """
         index = 0
-        length=len(nums)
+        length = len(nums)
         while index < length:
             if nums[index] == 0:
                 del nums[index]
                 nums.append(0)
-                index-=1
-                length-=1
-            index+=1
+                index -= 1
+                length -= 1
+            index += 1
         print(nums)
 
 
-
-if __name__ == '__main__':
+if __name__ == "__main__":
 
     sol = Solution()
-    sol.moveZeroes([0,0,1])
+    sol.moveZeroes([0, 0, 1])

@@ -23,7 +23,7 @@ class Solution:
         pass
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     atree = TreeNode(1)
     btree = TreeNode(2)
     ctree = TreeNode(3)

@@ -1,12 +1,12 @@
-from heapq import heappush,heappop
+from heapq import heappush, heappop
+
 
 def heapsort(iterable):
 
-    h=[]
+    h = []
     for value in iterable:
-        heappush(h,iterable)
+        heappush(h, iterable)
     return [heappop(h) for i in range(len(h))]
-
 
 
 heapsort()

@@ -6,7 +6,8 @@ class Solution:
         :rtype: int
         """
 
-if __name__ == '__main__':
 
-    sol=Solution()
-    sol.strStr("hello","ll")
+if __name__ == "__main__":
+
+    sol = Solution()
+    sol.strStr("hello", "ll")

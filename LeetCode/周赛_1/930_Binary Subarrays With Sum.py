@@ -18,8 +18,10 @@ class Solution:
             numbers += value_dict[sum - S]
             value_dict[sum] += 1
         return numbers
-if __name__ == '__main__':
 
-    sol=Solution()
-    res=sol.numSubarraysWithSum([1,0,1,0,1],2)
+
+if __name__ == "__main__":
+
+    sol = Solution()
+    res = sol.numSubarraysWithSum([1, 0, 1, 0, 1], 2)
     print(res)

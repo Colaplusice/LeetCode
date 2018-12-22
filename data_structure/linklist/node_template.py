@@ -4,7 +4,7 @@ class Node:
         self.next = None
 
 
-class NodeList():
+class NodeList:
     def __init__(self):
         self.first = None
 
@@ -19,17 +19,17 @@ class NodeList():
         temp.next = Node(val)
 
     def out(self):
-        temp=self.first
+        temp = self.first
         while temp:
             print(temp.val)
-            temp=temp.next
+            temp = temp.next
 
-if __name__ == '__main__':
-    node=NodeList()
+
+if __name__ == "__main__":
+    node = NodeList()
     node.add_last(1)
     node.add_last(2)
     node.add_last(3)
     node.add_last(4)
 
     node.out()
-

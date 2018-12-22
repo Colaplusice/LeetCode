@@ -7,7 +7,7 @@ for each in reversed(a):
     else:
         stack.insert(0, each)
         for i_2 in range(len(stack)):
-            if stack[:i_2] and int(''.join(stack[:i_2])) % 3 == 0:
+            if stack[:i_2] and int("".join(stack[:i_2])) % 3 == 0:
                 stack = []
                 max_num += 1
                 break

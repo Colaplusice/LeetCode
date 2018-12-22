@@ -1,3 +1,2 @@
-
-class MusicPlayer():
+class MusicPlayer:
     pass
